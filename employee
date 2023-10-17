@@ -64,7 +64,7 @@ class Manager extends Employee{
 	String department;
 	public void getdepartment() {
 		System.out.println("enter your department:");
-		department=sc.next();
+		department=sc.nextLine();
 	}
 	public void printdepartment() {
 		System.out.println("department:"+department);
