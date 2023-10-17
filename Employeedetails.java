@@ -1,4 +1,10 @@
-
+/**********************************************************************************
+ * File:EmployeeDetails.java
+ * Description:To print the details of employee using the concept of Inheritance.
+ * Author:Neha Maria Joji
+ * Version:1.0
+ * Date:17/10/23
+ **********************************************************************************/
 import java.util.Scanner;
 public class EmployeeDetails {
 	public static void main(String[] args) {
