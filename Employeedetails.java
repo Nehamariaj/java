@@ -24,7 +24,7 @@ public class EmployeeDetails {
 		System.out.println();
 		System.out.println("Details of the manager:");
 		manager.printdetails();
-		officer.printSalary();
+		manager.printSalary();
 	    manager.printdepartment();
 		}
 	}
