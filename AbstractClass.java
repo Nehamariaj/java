@@ -1,3 +1,10 @@
+/**********************************************************************************************************
+ * File:Abstractclass.java
+ * Description:To print the details of number of sides using the concept of abstract class and Inheritance.
+ * Author:Neha Maria Joji
+ * Version:1.0
+ * Date:27/10/23
+ ********************************************************************************************************/
 package javaLab;
 
 public class AbstractClass {
