@@ -125,28 +125,6 @@ public class CustomException{
 				break;
 		}default:
 			break;
-			/*case 5:{
-				System.out.println("Enter the Account Number:");
-				long a=sc.nextLong();
-				try {
-					System.out.println("Enter the amount you want to withdraw:");
-					long amount=sc.nextLong();
-					for(int i=0;i<num;i++) {
-					if(amount>customer[i].balance) {
-						throw fundsException;
-					}
-					else {
-							if(a==customer[i].acnum) {
-								customer[i].balance=customer[i].balance-amount;
-								customer[i].printdetails();
-								}
-						}	
-					}
-			}catch(InsufficientFundsException e) {
-				System.out.println(e.getMessage());
-			}
-				break;
-		}*/
 			}
 		
 	}while(choice<5);
