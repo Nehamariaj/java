@@ -20,7 +20,7 @@ public class FileOperations {
 			   input.close();
 			   output=new FileReader("input.txt");
 			   int bytes = output.read(data1);
-			   input.close();
+			   output.close();
 			   input=new FileWriter("output.txt");
 			   input.write(data1,0,bytes);
 			   System.out.println("output.txt");
