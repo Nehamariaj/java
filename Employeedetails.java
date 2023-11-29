@@ -34,46 +34,46 @@ class Employee{
    String name,address;
    long phone;
 	public void getdetails() {
-		System.out.println("enter the following details:");
-		System.out.print("name:");
+		System.out.println("Enter the following details:");
+		System.out.print("Name:");
 		name =sc.nextLine();
-		System.out.print("age:");
+		System.out.print("Age:");
 		age=sc.nextInt();
-		System.out.print("phone number:");
+		System.out.print("Phone number:");
 		phone=sc.nextLong();
-		System.out.print("salary:");
+		System.out.print("Salary:");
 		salary=sc.nextInt();
 		sc.nextLine();
-		System.out.print("address:");
+		System.out.print("Address:");
 	    address=sc.nextLine();	
 	}
 	public void printSalary() {
-		System.out.println("salary:"+salary);
+		System.out.print("Salary:"+salary);
 		}
 	public void printdetails() {
-		System.out.println("name:"+name);
-		System.out.println("age:"+age);
-		System.out.println("phone number:"+phone);
-		System.out.println("address:"+address);
+		System.out.println("Name:"+name);
+		System.out.println("Age:"+age);
+		System.out.println("Phone number:"+phone);
+		System.out.println("Address:"+address);
 	}
 }
 class Officer extends Employee{
 	String specialize;
 	public void getspecialization() {
-		System.out.println("enter your specialisation:");
+		System.out.print("Enter your specialisation:");
 		specialize=sc.nextLine();
 	}
 	public void printspecialization() {
-		System.out.println("specialisation:"+specialize);
+		System.out.println("Specialisation:"+specialize);
 		}
 }
 class Manager extends Employee{
 	String department;
 	public void getdepartment() {
-		System.out.println("enter your department:");
+		System.out.print("Enter your department:");
 		department=sc.nextLine();
 	}
 	public void printdepartment() {
-		System.out.println("department:"+department);
+		System.out.println("Department:"+department);
 	}
 }
