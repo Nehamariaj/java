@@ -1,0 +1,87 @@
+package javaPractice;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+class DoublyLinkedList<T>{
+	private LinkedList<T> list = new LinkedList<>();
+	public void insertLast(T element) 
+	{
+		list.addLast(element);
+	}
+	public void insertFront (T element)
+	{
+		list.addFirst(element);
+	}
+	public void insertAtAnyPosition(int index, T element)
+	{
+		list.add(index, element);
+	}
+	public void  removeAtAnyPos(int index)
+	{
+	 list.remove(index);	
+	}
+	public void display() 
+	{
+	 for(T element: list) {
+		 System.out.print(element+" ");
+	 }
+	 System.out.println();
+	}
+}
+
+
+
+public class DoublyLinkedListDemo {
+
+	public static void main(String[] args) {
+		DoublyLinkedList<Integer> doublyLinkedList = new DoublyLinkedList<Integer>();
+		Scanner sc = new Scanner(System.in);
+		int choice;
+		do {
+			System.out.println("---------------");
+            System.out.println("1. Insert at Front");
+            System.out.println("2. Insert at Last");
+            System.out.println("3. Insert at any Position");
+            System.out.println("4. Remove at any Position");
+            System.out.println("5. Display");
+            System.out.println("6. Exit");
+            System.out.println("---------------");
+            System.out.print("Enter your choice:");
+            choice = sc.nextInt();
+            switch (choice) {
+            case 1: 
+            	System.out.print("Enter the Element to be inserted:");
+            	int elements=sc.nextInt();
+            	doublyLinkedList.insertFront(elements);
+            	break;
+            case 2:
+            	System.out.print("Enter the Element to be inserted:");
+            	elements=sc.nextInt();
+            	doublyLinkedList.insertLast(elements);
+            	break;
+            case 3:
+            	System.out.print("Enter the Element to be inserted:");
+            	elements=sc.nextInt();
+            	System.out.print("Enter the Position:");
+            	int pos = sc.nextInt();
+            	doublyLinkedList.insertAtAnyPosition((pos-1),elements );
+            	break;
+            case 4:
+            	System.out.print("Enter the Position:");
+            	pos = sc.nextInt();
+            	doublyLinkedList.removeAtAnyPos((pos-1));
+            	break;
+            case 5:
+            	System.out.println("Elements in doubly Linked List:");
+            	doublyLinkedList.display();
+            	break;
+            default:
+            	System.out.println("Thank you");
+            	break;
+            }
+		} while(choice<6);
+            	
+	}
+
+}
